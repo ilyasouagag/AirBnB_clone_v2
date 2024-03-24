@@ -25,7 +25,7 @@ def message(text):
 @app.route('/python/<text>', strict_slashes=False)
 def ano_message(text):
     "display text message in python/<text>"
-    return "C {}".format(text.replace('_', ' '))
+    return "Python {}".format(text.replace('_', ' '))
 
 
 if __name__ == "__main__":

@@ -21,7 +21,7 @@ def message(text):
     "display text message in /c/<text>"
     return "C {}".format(text.replace('_', ' '))
 
-
+@app.route("/python", strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
 def python(text="is cool"):
     "display text message in python/<text>"

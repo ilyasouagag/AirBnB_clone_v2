@@ -10,7 +10,7 @@ def display():
     return "Hello HBNB!"
 
 
-@app.route("/hbnb", strict_slashes=False)
+@app.route('/hbnb', strict_slashes=False)
 def display():
     "dipleay HBNB in /hbnb"
     return "HBNB"

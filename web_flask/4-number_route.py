@@ -29,11 +29,10 @@ def python(text="is cool"):
     return "Python {}".format(text.replace('_', ' '))
 
 
-@app.route('/number/<n>', strict_slashes=False)
+@app.route('/number/<int:n>', strict_slashes=False)
 def number(n):
-    "display the nuber if it's integer"
-    if type(n) is int:
-        return "{} is a number".format(n)
+    "display the number if it's integer"
+    return "{} is a number".format(n)
 
 
 if __name__ == "__main__":

@@ -23,7 +23,7 @@ def message(text):
 
 
 @app.route('/python/<text>', strict_slashes=False)
-def ano_message(text="is cool"):
+def python(text="is cool"):
     "display text message in python/<text>"
     return "Python {}".format(text.replace('_', ' '))
 

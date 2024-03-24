@@ -11,8 +11,8 @@ def display():
 
 
 @app.route('/hbnb', strict_slashes=False)
-def display():
-    "dipleay HBNB in /hbnb"
+def hbnb():
+    "display HBNB in /hbnb"
     return "HBNB"
 
 

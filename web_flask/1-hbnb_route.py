@@ -8,9 +8,13 @@ app = Flask(__name__)
 def display():
     """display hello hbnb in the root"""
     return "Hello HBNB!"
+
+
 @app.route("/hbnb", strict_slashes=False)
 def display():
+    "dipleay HBNB in /hbnb"
     return "HBNB"
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
